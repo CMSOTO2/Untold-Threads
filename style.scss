@@ -1,0 +1,197 @@
+//Breakpoints
+@mixin breakpoint($class) {
+  @if $class==sm {
+    @media (max-width: 576px) {
+      @content;
+    }
+  } @else if $class==xs {
+    @media (max-width: 400px) {
+      @content;
+    }
+  } @else if $class==md {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $class==lg {
+    @media (max-width: 991px) {
+      @content;
+    }
+  } @else if $class==xl {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  } @else if $class==xxl {
+    @media (max-width: 1600px) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint mixin supports: sm, md, lg, xxl";
+  }
+}
+
+//imports
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+// FONTS
+$raleway: "Raleway", sans-serif;
+$roboto: "Roboto", sans-serif;
+
+//Colors
+$purple: #3c1874;
+$white: #ffffff;
+$dark-red: #932432;
+$gray: #283747;
+$pink-red: #de354c;
+
+%shadow {
+  -webkit-box-shadow: 0px 5px 10px -1px #000000;
+  box-shadow: 0px 5px 10px -1px #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+//reset all browser styles
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+rem,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+rembed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  //font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  max-width: 100%;
+  scroll-behavior: smooth;
+  font-size: 25px;
+  @include breakpoint(xxl) {
+    font-size: 23px;
+  }
+  @include breakpoint(lg) {
+    font-size: 20px;
+  }
+  @include breakpoint(md) {
+    font-size: 18px;
+  }
+  body {
+    overflow-x: hidden;
+    max-width: 100%;
+    height: auto;
+    background: $white;
+  }
+}
