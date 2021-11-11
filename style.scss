@@ -42,6 +42,7 @@ $white: #ffffff;
 $dark-red: #932432;
 $gray: #283747;
 $pink-red: #de354c;
+$black: #000000;
 
 %shadow {
   -webkit-box-shadow: 0px 5px 10px -1px #000000;
@@ -50,6 +51,8 @@ $pink-red: #de354c;
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 //reset all browser styles
@@ -193,5 +196,65 @@ html {
     max-width: 100%;
     height: auto;
     background: $white;
+  }
+
+  // FONT SIZES
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 600;
+    font-family: $raleway;
+  }
+  a {
+    font-weight: 600;
+    font-family: $raleway;
+  }
+  p,
+  span {
+    font-weight: 400;
+    font-family: $roboto;
+  }
+  h1 {
+    font-size: 4.48rem;
+  }
+  h2 {
+    font-size: 4.0625rem;
+  }
+  h3 {
+    font-size: 3.125rem;
+  }
+  h4 {
+    font-size: 2.1875rem;
+  }
+  h5 {
+    font-size: 1.875rem;
+  }
+  h6 {
+    font-size: 1.25rem;
+  }
+  p,
+  a {
+    font-size: 1.5625rem;
+    text-decoration: none;
+  }
+  li {
+    font-size: 1.5625rem;
+  }
+  p {
+    line-height: 1.25;
+  }
+  //Globals
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container {
+    max-width: 93%;
+    width: 1550px;
+    margin: 0 auto;
   }
 }
