@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html .individual-artist .content-wrapper .offset-box, html .founders .founders-wrapper .content-wrapper .offset-box-left, html .founders .founders-wrapper .content-wrapper .offset-box-right, html footer .content-wrapper .offset-box {
+  box-shadow: 0px 5px 10px -1px #000000;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -170,6 +174,8 @@ html h6 {
 html a {
   font-weight: 600;
   font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 html p,
@@ -179,11 +185,11 @@ html span {
 }
 
 html h1 {
-  font-size: 4.48rem;
+  font-size: 4.125rem;
 }
 
 html h2 {
-  font-size: 4.0625rem;
+  font-size: 2.826086956521739rem;
 }
 
 html h3 {
@@ -199,12 +205,12 @@ html h5 {
 }
 
 html h6 {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
 }
 
 html p,
 html a {
-  font-size: 1.5625rem;
+  font-size: 1.1rem;
   text-decoration: none;
 }
 
@@ -226,5 +232,277 @@ html .container {
   max-width: 93%;
   width: 1550px;
   margin: 0 auto;
+}
+
+html .one-column-side-icons {
+  padding-top: 75px;
+  padding-bottom: 50px;
+  position: relative;
+  height: 1000px;
+}
+
+html .one-column-side-icons .purple-circle {
+  position: absolute;
+  width: 510px;
+  height: 510px;
+  background-color: #3c1874;
+  border-radius: 50%;
+  left: -265px;
+}
+
+html .one-column-side-icons .paint-brush {
+  position: absolute;
+  left: 75px;
+  top: 250px;
+}
+
+html .one-column-side-icons .red-block {
+  position: absolute;
+  background-color: #932432;
+  width: 50px;
+  height: 250px;
+  right: 0;
+}
+
+html .one-column-side-icons .text-wrapper {
+  margin: 0 auto;
+  width: 60%;
+  z-index: 99;
+}
+
+html .one-column-side-icons .text-wrapper h2 {
+  text-align: center;
+}
+
+html .individual-artist {
+  padding-bottom: 100px;
+}
+
+html .individual-artist .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+html .individual-artist .content-wrapper {
+  height: 680px;
+  width: 485px;
+  position: relative;
+}
+
+html .individual-artist .content-wrapper img {
+  width: calc(100% - 20px);
+  height: calc(100% - 15px);
+  position: relative;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+html .individual-artist .content-wrapper .offset-box {
+  width: calc(100% - 20px);
+  height: calc(100% - 15px);
+  background-color: #de354c;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+html .individual-artist .text-wrapper {
+  width: 50%;
+}
+
+html .individual-artist .text-wrapper .socials-row {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+html .individual-artist .text-wrapper p {
+  padding-bottom: 10px;
+}
+
+html .individual-artist .text-wrapper .buttons-row {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+html .individual-artist .text-wrapper .buttons-row #artist-product {
+  background-color: #932432;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #ffffff;
+  height: 75px;
+  width: 320px;
+  text-decoration: none;
+}
+
+html .individual-artist .text-wrapper .content-wrapper {
+  position: relative;
+  width: 326px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: black;
+}
+
+html .individual-artist .text-wrapper .content-wrapper .border {
+  position: absolute;
+  border: 1px solid #3c1874;
+  width: calc(100% - 5px);
+  height: calc(100% - 5px);
+  bottom: 0;
+  left: 0;
+  color: black;
+}
+
+html .individual-artist .text-wrapper .content-wrapper .offset-border {
+  position: absolute;
+  border: 1px solid #de354c;
+  width: calc(100% - 5px);
+  height: calc(100% - 5px);
+  top: 0;
+  right: 0;
+}
+
+html .founders {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+html .founders .container {
+  text-align: center;
+}
+
+html .founders .founders-wrapper {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+html .founders .founders-wrapper .content-wrapper {
+  height: 685px;
+  width: 485px;
+  position: relative;
+}
+
+html .founders .founders-wrapper .content-wrapper .img-wrapper {
+  width: 485px;
+}
+
+html .founders .founders-wrapper .content-wrapper img {
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  position: relative;
+  object-fit: cover;
+  top: 0;
+  right: -10px;
+  z-index: 1;
+}
+
+html .founders .founders-wrapper .content-wrapper .founder-2 {
+  top: 0;
+  left: -10px;
+}
+
+html .founders .founders-wrapper .content-wrapper .offset-box-left {
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  background-color: #de354c;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+html .founders .founders-wrapper .content-wrapper .offset-box-right {
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  background-color: #de354c;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+html footer {
+  background-color: #121212;
+  color: #ffffff;
+  padding-top: 50px;
+  height: 330px;
+  overflow: hidden;
+}
+
+html footer ul {
+  list-style: none;
+}
+
+html footer .container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+html footer .container .terms-policy {
+  position: absolute;
+  left: 0;
+  bottom: -100px;
+}
+
+html footer .container .terms-policy a {
+  font-size: 0.875rem;
+}
+
+html footer .container .socials {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-start;
+  align-items: center;
+  width: 30%;
+}
+
+html footer .container #email {
+  text-decoration: underline;
+}
+
+html footer .content-wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  right: 0;
+  bottom: -50px;
+}
+
+html footer .content-wrapper .offset-box {
+  width: calc(100% - 5px);
+  height: calc(100% - 5px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #ffffff;
+}
+
+html footer .content-wrapper .purple-box {
+  width: calc(100% - 5px);
+  height: calc(100% - 5px);
+  background-color: #3c1874;
+  position: relative;
+  top: 2.5px;
+  left: 2.5px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
