@@ -737,25 +737,34 @@ html .slanted-background .content-wrapper .offset-box-right {
 html footer {
   background-color: #121212;
   color: #ffffff;
-  padding-top: 50px;
-  height: 330px;
-  overflow: hidden;
+  padding: 50px 0;
 }
 
 html footer ul {
   list-style: none;
 }
 
+html footer ul li {
+  padding: 5px;
+}
+
 html footer .container {
   display: flex;
   justify-content: space-between;
   position: relative;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 991px) {
+  html footer .container {
+    flex-direction: column;
+  }
 }
 
 html footer .container .terms-policy {
   position: absolute;
   left: 0;
-  bottom: -100px;
+  bottom: 0;
 }
 
 html footer .container .terms-policy a {
@@ -782,7 +791,7 @@ html footer .content-wrapper {
   width: 55px;
   height: 55px;
   right: 0;
-  bottom: -50px;
+  bottom: 40px;
 }
 
 html footer .content-wrapper .offset-box {
