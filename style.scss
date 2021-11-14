@@ -404,13 +404,13 @@ html {
     //Didn't make the same as the other offset boxes due to slick slider html so i added box shadow
     .slick-prev.slick-arrow {
       left: 0;
-      top: 30px;
+      bottom: 0px;
       -webkit-box-shadow: 5px 5px 0px 0px $gray;
       box-shadow: 5px 5px 0px 0px $gray;
     }
     .slick-next.slick-arrow {
       right: 0;
-      top: 30px;
+      bottom: 0px;
       -webkit-box-shadow: 5px 5px 0px 0px $gray;
       box-shadow: -5px 5px 0px 0px $gray;
     }
@@ -755,6 +755,9 @@ html {
         align-self: flex-start;
         align-items: center;
         width: 30%;
+        @include breakpoint(lg) {
+          width: 100%;
+        }
       }
       #email {
         text-decoration: underline;

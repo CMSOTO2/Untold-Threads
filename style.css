@@ -394,13 +394,13 @@ html .synced-carousel .slick-prev.slick-arrow::after {
 
 html .synced-carousel .slick-prev.slick-arrow {
   left: 0;
-  top: 30px;
+  bottom: 0px;
   box-shadow: 5px 5px 0px 0px #283747;
 }
 
 html .synced-carousel .slick-next.slick-arrow {
   right: 0;
-  top: 30px;
+  bottom: 0px;
   box-shadow: -5px 5px 0px 0px #283747;
 }
 
@@ -777,6 +777,12 @@ html footer .container .socials {
   align-self: flex-start;
   align-items: center;
   width: 30%;
+}
+
+@media (max-width: 991px) {
+  html footer .container .socials {
+    width: 100%;
+  }
 }
 
 html footer .container #email {
