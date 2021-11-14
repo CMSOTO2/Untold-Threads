@@ -293,8 +293,34 @@ html .synced-carousel .content-wrapper {
   position: relative;
 }
 
+@media (max-width: 991px) {
+  html .synced-carousel .content-wrapper {
+    width: 700px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  html .synced-carousel .content-wrapper {
+    width: 550px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  html .synced-carousel .content-wrapper {
+    width: 400px !important;
+    height: 600px !important;
+  }
+}
+
 html .synced-carousel .content-wrapper .two-column {
   display: flex;
+}
+
+@media (max-width: 576px) {
+  html .synced-carousel .content-wrapper .two-column {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 html .synced-carousel .content-wrapper .artist-box {
@@ -520,12 +546,14 @@ html .founders .founders-wrapper {
   margin: 40px 100px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 html .founders .founders-wrapper .content-wrapper {
   height: 685px;
   width: 485px;
   position: relative;
+  margin: 10px;
 }
 
 html .founders .founders-wrapper .content-wrapper .img-wrapper {

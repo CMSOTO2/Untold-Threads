@@ -312,8 +312,23 @@ html {
       height: 413px !important;
       position: relative;
 
+      @include breakpoint(lg) {
+        width: 700px !important;
+      }
+      @include breakpoint(md) {
+        width: 550px !important;
+      }
+      @include breakpoint(sm) {
+        width: 400px !important;
+        height: 600px !important;
+      }
+
       .two-column {
         display: flex;
+        @include breakpoint(sm) {
+          flex-direction: column;
+          align-items: center;
+        }
       }
       .artist-box {
         position: relative;
@@ -516,12 +531,13 @@ html {
       margin: 40px 100px;
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
 
       .content-wrapper {
         height: 685px;
         width: 485px;
         position: relative;
-
+        margin: 10px;
         .img-wrapper {
           width: 485px;
         }
