@@ -202,7 +202,7 @@ html h4 {
 }
 
 html h5 {
-  font-size: 1.875rem;
+  font-size: 1.52rem;
 }
 
 html h6 {
@@ -239,7 +239,7 @@ html .one-column-side-icons {
   padding-top: 75px;
   padding-bottom: 50px;
   position: relative;
-  height: 1000px;
+  height: 700px;
 }
 
 html .one-column-side-icons .purple-circle {
@@ -273,6 +273,140 @@ html .one-column-side-icons .text-wrapper {
 
 html .one-column-side-icons .text-wrapper h2 {
   text-align: center;
+}
+
+html .synced-carousel {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+html .synced-carousel .container {
+  text-align: center;
+  max-width: 100%;
+}
+
+html .synced-carousel .content-wrapper {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 840px !important;
+  height: 413px !important;
+  position: relative;
+}
+
+html .synced-carousel .content-wrapper .two-column {
+  display: flex;
+}
+
+html .synced-carousel .content-wrapper .artist-box {
+  position: relative;
+  padding: 30px 40px;
+  text-align: left;
+  top: 0;
+  left: 0;
+  width: calc(100% - 20px);
+  height: calc(100% - 15px);
+  background-color: #3c1874;
+  color: #ffffff;
+}
+
+html .synced-carousel .content-wrapper .offset-box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #283747;
+  width: calc(100% - 20px);
+  height: calc(100% - 15px);
+  z-index: -1;
+}
+
+html .synced-carousel .content-wrapper .two-buttons {
+  margin-top: 30px;
+  flex: 0.5;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+html .synced-carousel .content-wrapper .two-buttons .btn {
+  border: 2px solid #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+html .synced-carousel .content-wrapper .artist-profile {
+  flex: 0.5;
+}
+
+html .synced-carousel .content-wrapper .artist-profile #artist-name {
+  margin-top: 20px;
+  color: #de354c;
+}
+
+html .synced-carousel .content-wrapper .artist-profile img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+}
+
+html .synced-carousel .content-wrapper .product-btn {
+  background-color: #932432;
+  padding: 20px 105px;
+  position: relative;
+}
+
+html .synced-carousel .img-wrapper {
+  height: 358px;
+  width: 224px;
+}
+
+html .synced-carousel .img-wrapper img {
+  width: 100%;
+}
+
+html .synced-carousel .slider-nav {
+  padding-top: 50px;
+}
+
+html .synced-carousel .product-card {
+  position: relative;
+  height: 358px !important;
+  width: 224px !important;
+}
+
+html .synced-carousel .slick-prev.slick-arrow,
+html .synced-carousel .slick-next.slick-arrow {
+  width: 75px;
+  height: 75px;
+  background-color: #932432;
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 100;
+  border: none;
+}
+
+html .synced-carousel .slick-prev.slick-arrow::after {
+  content: url("./images/side-arrow.svg");
+}
+
+html .synced-carousel .slick-prev.slick-arrow {
+  left: 0;
+  top: 30px;
+  box-shadow: 5px 5px 0px 0px #283747;
+}
+
+html .synced-carousel .slick-next.slick-arrow {
+  right: 0;
+  top: 30px;
+  box-shadow: -5px 5px 0px 0px #283747;
+}
+
+html .synced-carousel .slick-next.slick-arrow::after {
+  content: url("./images/side-arrow.svg");
+  transform: rotate(180deg);
 }
 
 html .individual-artist {
