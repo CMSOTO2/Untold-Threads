@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-html .individual-artist .content-wrapper .offset-box, html .founders .founders-wrapper .content-wrapper .offset-box-left, html .founders .founders-wrapper .content-wrapper .offset-box-right, html .hanging-carousel .name-ribbon, html .slanted-background .content-wrapper .offset-box-right, html footer .content-wrapper .offset-box {
+html .individual-artist .content-wrapper .offset-box, html .founders .founders-wrapper .content-wrapper .offset-box-left, html .founders .founders-wrapper .content-wrapper .offset-box-right, html .hanging-carousel .name-ribbon, html .slanted-background .content-wrapper .offset-box-right, html .artist-slider .content-wrapper .offset-box-left, html .artist-slider .content-wrapper .offset-box-right, html footer .content-wrapper .offset-box {
   box-shadow: 0px 5px 10px -1px #000000;
 }
 
@@ -249,6 +249,13 @@ html .one-column-side-icons .purple-circle {
   background-color: #3c1874;
   border-radius: 50%;
   left: -265px;
+}
+
+@media (max-width: 1200px) {
+  html .one-column-side-icons .purple-circle {
+    width: 450px;
+    height: 450px;
+  }
 }
 
 html .one-column-side-icons .paint-brush {
@@ -760,6 +767,94 @@ html .slanted-background .content-wrapper .offset-box-right {
   right: 0;
   bottom: 0;
   z-index: 0;
+}
+
+html .artist-slider {
+  text-align: center;
+  padding: 50px 0;
+}
+
+html .artist-slider .content-wrapper {
+  width: 230px !important;
+  height: 320px !important;
+  position: relative;
+  margin-top: 70px;
+}
+
+html .artist-slider .content-wrapper .img-wrapper {
+  width: 230px;
+}
+
+html .artist-slider .content-wrapper img {
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  position: relative;
+  object-fit: cover;
+  top: 0;
+  z-index: 1;
+}
+
+html .artist-slider .content-wrapper .founder-2 {
+  left: 20px;
+}
+
+html .artist-slider .content-wrapper .offset-box-left {
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  background-color: #de354c;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+html .artist-slider .content-wrapper .offset-box-right {
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  background-color: #3c1874;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+html .artist-slider .artist-name {
+  font-size: 20px !important;
+  margin-top: 30px;
+  font-weight: bold !important;
+}
+
+html .artist-slider .slick-prev.slick-arrow,
+html .artist-slider .slick-next.slick-arrow {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: #283747;
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 100;
+  border: none;
+}
+
+html .artist-slider .slick-prev.slick-arrow {
+  top: 160px;
+}
+
+html .artist-slider .slick-next.slick-arrow {
+  top: 160px;
+  right: 0;
+}
+
+html .artist-slider .slick-prev.slick-arrow::after {
+  content: url("./images/side-arrow.svg");
+}
+
+html .artist-slider .slick-next.slick-arrow::after {
+  content: url("./images/side-arrow.svg");
+  transform: rotate(180deg);
 }
 
 html footer {
